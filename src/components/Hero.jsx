@@ -134,9 +134,7 @@ function Hero() {
                 alt="Aswin Portrait"
                 className="w-full h-full object-cover grayscale contrast-125 group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
               />
-              <div className="absolute bottom-4 left-4 bg-[var(--color-bg)] border-2 border-[var(--color-border)] px-3 py-1 text-[10px] font-black uppercase tracking-tighter">
-                Dev_Core_v1.0
-              </div>
+              
             </div>
           </div>
         </div>
