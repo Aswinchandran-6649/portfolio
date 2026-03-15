@@ -53,7 +53,7 @@ function Navbar({ theme, setTheme }) {
             ASWIN CHANDRAN
           </span>
           <span className="text-[8px] md:text-[10px] font-bold uppercase tracking-[0.2em] opacity-70">
-            MERN Developer
+            Full-Stack Developer
           </span>
         </a>
 
