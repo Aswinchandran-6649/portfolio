@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+@theme {
+  /* Default: Neo-Brutal */
+  --color-bg: #FFF500;
+  --color-text: #000000;
+  --color-border: #000000;
+  --color-accent: #00F0FF;
+  --animate-slideUp: slideUp 0.8s ease-out forwards;
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+/* --- THEME PALETTES --- */
+
+/* 01. Minimalist */
+.theme-minimal {
+  --color-bg: #FFFFFF;
+  --color-text: #000000;
+  --color-border: #000000;
+  --color-accent: #E5E5E5;
+}
+
+/* 02. Dark Mode */
+.theme-dark {
+  --color-bg: #030303;
+  --color-text: #FFFFFF;
+  --color-border: #FFFFFF;
+  --color-accent: #3b82f6;
+}
+
+/* 03. Cyberpunk (Vibrant Purple/Neon) */
+.theme-cyber {
+  --color-bg: #0d0221;
+  --color-text: #ff00ff;
+  --color-border: #ff00ff;
+  --color-accent: #00ffff;
+}
+
+/* 04. Forest/Earth (Organic) */
+.theme-forest {
+  --color-bg: #e0e2db;
+  --color-text: #1a2f1b;
+  --color-border: #1a2f1b;
+  --color-accent: #8fb996;
+}
+
+/* 05. Sunset (Warm/Muted) */
+.theme-sunset {
+  --color-bg: #fff1e6;
+  --color-text: #6b2737;
+  --color-border: #6b2737;
+  --color-accent: #f77f00;
+}
+
+/* 06. Midnight Ink (Monochrome Blue-Grey) */
+.theme-ink {
+  --color-bg: #0a1128;
+  --color-text: #d4d4d4;
+  --color-border: #d4d4d4;
+  --color-accent: #1c2541;
+}
+
+/* 07. Electric (High Contrast Blue/Red) */
+.theme-electric {
+  --color-bg: #000814;
+  --color-text: #ffc300;
+  --color-border: #ffc300;
+  --color-accent: #ff5733;
+}
+
+/* 08. Candy (Playful/Pastel) */
+.theme-candy {
+  --color-bg: #ffc8dd;
+  --color-text: #590d22;
+  --color-border: #590d22;
+  --color-accent: #cdb4db;
+}
+
+/* 09. Hacker (Classic Terminal) */
+.theme-hacker {
+  --color-bg: #0a0a0a;
+  --color-text: #00ff41; /* Classic Matrix Green */
+  --color-border: #00ff41;
+  --color-accent: #003b00;
+}
+
+/* 10. Blood Moon (High-Contrast Red/Slate) */
+.theme-blood {
+  --color-bg: #1a0a0a;
+  --color-text: #ff3e3e;
+  --color-border: #ff3e3e;
+  --color-accent: #2d1b1b;
+}
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: all 0.3s ease;
+}
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(100%); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
