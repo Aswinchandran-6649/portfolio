@@ -53,7 +53,6 @@ function About() {
                   opportunities to contribute to real-world applications.
                 </p>
 
-              
                 <div className="w-48 h-60 border-[6px] border-[var(--color-border)] shadow-[8px_8px_0px_var(--color-border)] overflow-hidden bg-[var(--color-accent)] mt-6">
                   <img
                     src="./aswinn.jpeg"
@@ -143,55 +142,57 @@ function About() {
                 ✕
               </button>
             </div>
+
             <div className="space-y-8">
               <div>
                 <h3 className="font-black uppercase tracking-[0.2em] opacity-60 mb-4 text-xs">
                   // Education
                 </h3>
+
                 <div className="space-y-6">
+                  {/* Education */}
+                  <div className="space-y-4">
+                    <h3 className="font-black uppercase text-sm">Education</h3>
 
-  {/* Education */}
-  <div className="space-y-4">
-    <h3 className="font-black uppercase text-sm">Education</h3>
+                    {[
+                      { degree: "BCA", institution: "University of Calicut" },
+                      { degree: "Plus Two", institution: "VHSS Velom" },
+                      { degree: "SSLC", institution: "NHSS Vattoli" },
+                    ].map((edu) => (
+                      <div
+                        key={edu.degree}
+                        className="border-l-4 border-[var(--color-border)] pl-4"
+                      >
+                        <p className="font-black uppercase text-sm">
+                          {edu.degree}
+                        </p>
+                        <p className="text-xs opacity-70">
+                          {edu.institution}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
 
-    {[
-      { degree: "BCA", institution: "University of Calicut" },
-      { degree: "Plus Two", institution: "VHSS Velom" },
-      { degree: "SSLC", institution: "NHSS Vattoli" },
-    ].map((edu) => (
-      <div
-        key={edu.degree}
-        className="border-l-4 border-[var(--color-border)] pl-4"
-      >
-        <p className="font-black uppercase text-sm">
-          {edu.degree}
-        </p>
-        <p className="text-xs opacity-70">
-          {edu.institution}
-        </p>
-      </div>
-    ))}
-  </div>
+                  {/* Languages */}
+                  <div className="space-y-4">
+                    <h3 className="font-black uppercase text-sm">Languages</h3>
 
-  {/* Languages */}
-  <div className="space-y-4">
-    <h3 className="font-black uppercase text-sm">Languages</h3>
+                    {["English", "Malayalam", "Hindi"].map((lang) => (
+                      <div
+                        key={lang}
+                        className="border-l-4 border-[var(--color-border)] pl-4"
+                      >
+                        <p className="font-black uppercase text-sm">
+                          {lang}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
 
-    {["English", "Malayalam", "Hindi"].map((lang) => (
-      <div
-        key={lang}
-        className="border-l-4 border-[var(--color-border)] pl-4"
-      >
-        <p className="font-black uppercase text-sm">
-          {lang}
-        </p>
-      </div>
-    ))}
-  </div>
-
-</div>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       )}
@@ -199,4 +200,4 @@ function About() {
   );
 }
 
-export default About;
+export default About;                    
