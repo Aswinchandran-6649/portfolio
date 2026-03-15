@@ -148,23 +148,48 @@ function About() {
                 <h3 className="font-black uppercase tracking-[0.2em] opacity-60 mb-4 text-xs">
                   // Education
                 </h3>
-                <div className="space-y-4">
-                  {[
-                    { degree: "BCA", institution: "University of Calicut" },
-                    { degree: "Plus Two", institution: "VHSS Velom" },
-                    { degree: "SSLC", institution: "NHSS Vattoli" },
-                  ].map((edu) => (
-                    <div
-                      key={edu.degree}
-                      className="border-l-4 border-[var(--color-border)] pl-4"
-                    >
-                      <p className="font-black uppercase text-sm">
-                        {edu.degree}
-                      </p>
-                      <p className="text-xs opacity-70">{edu.institution}</p>
-                    </div>
-                  ))}
-                </div>
+                <div className="space-y-6">
+
+  {/* Education */}
+  <div className="space-y-4">
+    <h3 className="font-black uppercase text-sm">Education</h3>
+
+    {[
+      { degree: "BCA", institution: "University of Calicut" },
+      { degree: "Plus Two", institution: "VHSS Velom" },
+      { degree: "SSLC", institution: "NHSS Vattoli" },
+    ].map((edu) => (
+      <div
+        key={edu.degree}
+        className="border-l-4 border-[var(--color-border)] pl-4"
+      >
+        <p className="font-black uppercase text-sm">
+          {edu.degree}
+        </p>
+        <p className="text-xs opacity-70">
+          {edu.institution}
+        </p>
+      </div>
+    ))}
+  </div>
+
+  {/* Languages */}
+  <div className="space-y-4">
+    <h3 className="font-black uppercase text-sm">Languages</h3>
+
+    {["English", "Malayalam", "Hindi"].map((lang) => (
+      <div
+        key={lang}
+        className="border-l-4 border-[var(--color-border)] pl-4"
+      >
+        <p className="font-black uppercase text-sm">
+          {lang}
+        </p>
+      </div>
+    ))}
+  </div>
+
+</div>
               </div>
             </div>
           </div>
